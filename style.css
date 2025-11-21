@@ -1,0 +1,150 @@
+/*Resetar */ 
+*{
+    margin:0;
+    padding:0;
+}
+
+/*Estilização geral*/
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    background-color: #f7a0f7;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin:0;
+}
+
+/*Estilização do container principal*/
+.container{
+    background-color: aquamarine;
+    padding: 20px 40px;
+    border-radius: 16px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    text-align: center;
+    width: 350px;
+}
+
+/*Estilização dos elementos internos*/
+
+label{
+    font-weight: bold;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    color: #d500f9;
+}
+
+/*Estilização do título e parágrafo*/
+h1{
+    color: purple;
+    margin-bottom: 2px;
+    padding-bottom: 10px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 23px;
+}
+
+/* Adiciona estrelas antes e depois do título */
+h1::before{
+    content: "🌟";
+    margin-right: 10px;
+}
+
+h1::after{
+    content: "🌟";
+    margin-left: 10px;
+}
+
+/*Estilização do parágrafo*/
+p{
+    color: #e60a8a;
+    margin-bottom: 15px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+/*Estilização do formulário*/
+form{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+/*Estilização do input*/
+input [type="number"] {
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    width: 200%;
+    font-size: 1em;
+    box-sizing: border-box;
+    flex-grow: 1;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease; 
+}
+
+input [type="number"]:focus {
+    border-color: #f262b6;
+    box-shadow: 0 0 5px rgba(242, 98, 182, 0.5);
+    outline: none;
+}
+/*Estilização dos botões*/
+
+button{
+padding: 10px 15px;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+font-weight: bold;
+margin-top: 5px;
+width:auto;
+margin-left: auto;
+margin-right: auto;
+}
+
+/*Estilização específica dos botões*/
+#chutarButton {
+    background-color: #f262b6;
+    color: white;
+    border: none;  
+    border-radius: 10px;
+}
+/*Estilização do botão ao passar o mouse*/
+#chutarButton:hover {
+    background-color: #ec08b3;
+    cursor: pointer;
+}
+/*Estilização do botão quando desabilitado*/
+#reiniciarButton {
+    background-color: #e92bd0;
+    color: white;
+    border: none;
+    border-radius: 10px;
+}
+
+/*Estilização do botão ao passar o mouse*/
+#reiniciarButton:hover {
+    background-color: #d108b8;
+    cursor: pointer;
+}
+/*Estilização do botão quando desabilitado*/
+#reiniciarButton:disabled {
+    background-color: #f7cff7;
+    cursor: not-allowed;
+}
+/*Estilização da mensagem de feedback*/
+#mensagem{
+    margin-top: 15px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #d500f9;
+}
+/*Estilização da contagem de tentativas restantes*/
+#tentativasRestantes{
+    margin-top: 10px;
+    font-size: 14px;
+    color: #a500c4;
+}
+
